@@ -1,0 +1,25 @@
+1. Make sure to copy the kafka folder into C drive. 
+2.Rename the folder to kafka.
+3.First go to config folder.
+4.go to > server.properties.
+	change log dir properties to 
+	log.dirs=c:/kafka/kafka-logs
+5. go to > zookeeper.properties
+	change dataDir properties to
+	dataDir=c:/kafka/zookeeper-data
+
+To run the services:
+
+1. click on start-zookeeper.bat
+2. click on start-kafka.bat
+3. click on create-topic.bat(you can edit the topic name)
+4. click on producer-console.bat(optional, to test data send to consumer based on topic)
+5. click on consumer-console.bat(optional, to see data that comes from producer based on topic)
+
+To stop the services:
+
+1. click on stop-zookeeper.bat
+2. click on stop-kafka.bat
+
+
+
